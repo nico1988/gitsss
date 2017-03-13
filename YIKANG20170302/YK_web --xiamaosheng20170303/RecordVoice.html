@@ -1,0 +1,85 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>易康问答</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/recordVoice.css"/>
+    <link rel="stylesheet" href="css/animate.min.css"/>
+</head>
+<body>
+<div class="Yk_layout">
+    <!----------头部搜索---------->
+    <header class="Yk_header">
+        <div class="Yk_header_box ">
+            <a href="#" class="return">返回</a>
+            <em class="question">易康问答</em>
+            <!----------头部右侧的小点---------->
+            <div class="point">
+                <b></b><b></b><b></b>
+            </div>
+        </div>
+    </header>
+    <!----------头部搜索---------->
+    <!----------中部问答区块---------->
+    <div class="ask-answer">
+        <div class="ask clearfix">
+            <div class="head clearfix">
+                <h2 class="logo">李响</h2>
+                <span class="rmb">&yen;20</span>
+            </div>
+            <h3 class="question clearfix">如何学习语文的文言文内容,快速提高语文成绩？</h3>
+            <span class="time-left">还有<i>5</i>小时就过期</span>
+            <a href="javascript:;" class="response" id="response">回答</a>
+            <a href="javascript:;" class="refuse" id="refuse">拒绝回答</a>
+            <br/>
+        </div>
+        <div class="answer" id="answer">
+            <div class="answer01">
+                <span>免费追问</span>
+                <p>不知道你讲什么</p>
+                <span>6分钟前</span>
+            </div>
+        </div>
+    </div>
+    <!----------中部问答区块---------->
+    <!----------录音区块---------->
+    <div class="record clearfix">
+        <div class="earn"><b style="font-size:20px">公开</b>&nbsp&nbsp&nbsp<span>提问公开回答，答案每被偷听1次，你就赚<i>￥0.5</i></span></p>
+            <div class="record-c" id="recordor">
+                <!--录音按键-->
+                <div class="record-circle" id="record-circle">
+                    <span class="colu" id="colu"></span>
+                    <span class="bowl"></span><!--录音中部-->
+                    <span class="foot"></span>
+                </div>
+                <!----------重录按键---------->
+                <div class="re-record"><a href="javascript:;">重录</a></div>
+            </div>
+            <p class="record-w">按住 1秒 后开始录制，最多可录制60"</p>
+            <form action="#">
+                <input type="submit" value="确定发送" class="send"/>
+            </form>
+        </div>
+        <!----------录音区块---------->
+    </div>
+    <!-----------拒绝回答问题弹出框----------->
+    <div class="refuse_ans" id="refuse_ans">
+        <div class="refuse_con" id="refuse_con">
+            <h2>确定不回答这个问题？</h2>
+            <form action="#">
+                <textarea name="" id="reason" cols="30" rows="5" placeholder="填写拒绝理由，最多30字，非必填"></textarea>
+                <p style="margin-top:-22px"><i id="count">30</i><span>/30字</span><b id="limit"></b></p>
+            </form>
+            <div class="confirm">
+                <a href="#" id="rethink">我再想想</a>
+                <a href="#" id="confirm">确定</a>
+            </div>
+        </div>
+    </div>
+    <!-----------拒绝回答问题弹出框----------->
+</div>
+<script src="js/recordVoice.js"></script>
+</body>
+</html>

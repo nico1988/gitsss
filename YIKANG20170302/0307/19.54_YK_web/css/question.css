@@ -1,0 +1,163 @@
+/*提问详情页*/
+.ques_top{
+    background-color:#43B181;
+    width: 100%;
+    text-align: center;
+    color: #FFF;
+    font-size: 10px;
+    padding-bottom: 5px;
+    position: relative;
+}
+.ques_top span:last-of-type{
+    position: relative;
+}
+/*伪元素耳机小图标*/
+.ques_top span:last-of-type::before{
+    content: "";
+    display: block;
+    width: 25px;
+    height: 21px;
+    background: url("../images/sparate.png") no-repeat -6px -4px;
+    background-size:84px 53px;
+    position: absolute;
+    left: -7px;
+    top: 4px;
+}
+
+.ques_top .radiu{
+    width: 50px;
+    height: 50px;
+    background-color: #35414B;
+    border-radius: 50%;
+    margin: 0 auto;
+}
+.ques_top .Mic{
+    margin-top: 5px;
+    font-size: 15px;
+}
+.ques_top span{
+    display: inline-block;
+    padding: 5px 10px;
+    font-size: 12px;
+}
+.ques_containt{
+    background-color: #FFF;
+    padding: 0 20px;
+    color: #999;
+    font-size: 10px;
+    width: 100%;
+}
+/*蓝色箭头*/
+.contain_top{
+    height: 35px;
+    line-height: 35px;
+    position: relative;
+}
+.contain_top .Money{
+    color: #E94B36;
+}
+/*文本域控制*/
+textarea{
+    width: 100%;
+    background-color: #43B181;
+    border-radius: 15px;
+    color: purple;
+    padding: 10px 20px;
+}
+
+#counter{
+    position: absolute;
+    right: 36px;
+    top: 45%;
+    color: #ccc;
+    font-size: 16px;
+}
+
+.contain_bottom{
+    width: 100%;
+    padding-bottom: 7px;
+    margin-top: 5px;
+}
+.contain_bottom p{
+    margin-left: 23px;
+    font-size: 12px;
+    height: 30px;
+    line-height: 30px;
+    position: relative;
+}
+/*伪元素动态蓝背白勾*/
+.ques_containt .contain_bottom p::after{
+    position: absolute;
+    content: "";
+    display: block;
+    width: 32px;
+    height: 32px;
+    left: -31px;
+    top: 0;
+    background: url("../images/sparate.png") no-repeat 4px -24px;
+    background-size: 84px 53px;
+}
+.contain_bottom .grrenRa{
+    background-color: #43B181;
+    width: 58px;
+    height: 24px;
+    line-height: 24px;
+    text-align: center;
+    margin: 0 auto;
+    border-radius: 15px;
+    color: #fff;
+
+}
+.ques_footer{
+    font-size: 14px;
+    width: 100%;
+}
+.ques_to{
+    height: 35px;
+    line-height: 35px;
+    padding: 0 20px;
+}
+.ques_to b{
+    color: #43B181;
+    padding: 0 5px;
+   color: #43B181;
+}
+.ques_to b:first-child{
+    color: white;
+}
+.ques_bo{
+    width: 100%;
+    background-color: #fff;
+    height: 80px;
+    padding: 10px 10px;
+}
+.ques_bo .leftRadiu{
+    width: 45px;
+    height: 45px;
+    line-height: 45px;
+    background-color: #404040;
+    border-radius: 50%;
+    float: left;
+    margin-right: 20px;
+}
+.bo_right{
+    margin-left: 55px;
+}
+.bo_right p{
+    font-size: 12px;
+    color: #35414B;
+
+}
+.bo_right span{
+    font-size: 10px;
+    color: #999;
+    font-weight: 400;
+}
+.bo_right b{
+    color: red;
+}
+.line{
+    width: 100%;
+    height: 75px;
+    background-color: #43B181;
+}

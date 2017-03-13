@@ -1,0 +1,162 @@
+.ques_list{
+    margin: 0 auto;
+    color: #999;
+}
+.ques_list li{
+    padding: 10px 20px;
+}
+.ques_list p{
+    height: 30px;
+    line-height: 30px;
+}
+.ques_list .que_top span{
+    font-size: 10px;
+    float: right;
+    position: relative;
+}
+/*伪元素动态添加信息符号*/
+.ques_list .que_top span::before{
+    content: "";
+    display: block;
+    background: url("../images/sparate.png") no-repeat -30px -29px;
+    background-size: 84px 53px;
+    width: 16px;
+    height: 16px;
+    position: absolute;
+    left: -19px;
+    top: 2px;
+}
+.ques_list img{
+    width: 60px;
+    height: 60px;
+    margin-right: 12px;
+}
+.ques_list .high{
+    display: inline-block;
+    font-size: 14px;
+    font-weight: bold;
+    color: #35414B;
+}
+.ques_list .about{
+    margin-left: 20px;
+}
+.que_top li:nth-of-type(1){
+    text-align: center;
+    border-bottom: 1px solid #3c3c3c;
+}
+.que_top li:nth-of-type(1) a{
+    height: 44px;
+    line-height: 44px;
+    display: inline-block;
+    font-size: 18px;
+    width: 110px;
+}
+.que_top .greenCo{
+    color: #43B181;
+    border-bottom: 2px solid #43B181;
+}
+.que_top li:nth-of-type(1) .noneL{
+    width: 1px;
+    color: #c1c8d1;
+}
+.ques_list h3{
+    height: 30px;
+    line-height: 30px;
+    font-size: 14px;
+    padding-left: 20px;
+}
+.fir{
+    padding: 10px 20px;
+    background-color: #fff;
+}
+.fir p,
+.fir span,
+.fir .five{
+    font-size: 12px;
+    font-weight: bold;
+    height: 32px;
+    color: #35414B;
+    line-height: 32px;
+}
+.fir span{
+    font-weight: normal;
+}
+.fir .five{
+    padding-left: 45px;
+    float: right;
+    position: relative;
+}
+.five b{
+    margin-right: 45px;
+}
+/*伪元素动态添加耳机图标*/
+.fir .five b::before{
+    content: "";
+    display: block;
+    background: url("../images/sparate.png") no-repeat -55px -27px;
+    background-size: 84px 53px;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: 25px;
+    top: 9px;
+}
+/*伪元素添加小手点赞*/
+.fir .five{
+    position: relative;
+}
+.fir .five .icon_poi{
+    display: block;
+    background: url("../images/sparate.png") no-repeat -60px -5px;
+    background-size: 84px 53px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    top: 8px;
+    right: 14px;
+}
+.last{
+    height: 45px;
+    background-color: #EBEBEB;
+}
+
+.setlist .fir{
+    border-bottom: 1px solid #E9E9E9;
+    padding: 6px 20px;
+}
+
+.setlist .smow{
+     padding: 10px 20px;
+ }
+.setlist .high{
+    display: inline-block;
+    font-size: 18px;
+    font-weight: bold;
+    color: #35414b;
+    margin-top: 45px;
+}
+.setlist .smow span{
+    float: right;
+   /* margin-top: 75px;*/
+    bottom: 0;
+    color: #999;
+    position: relative;
+}
+.setlist .smow span::before{
+    content: "";
+    display: block;
+    background: url("../images/sparate.png") no-repeat -30px -28px;
+    background-size: 84px 53px;
+    width: 15px;
+    height: 15px;
+    position: absolute;
+    left: -19px;
+    top: 1px;
+}
+.setlist img{
+    margin-right: 25px;
+}
+.lineBlac{
+    height: 95px;
+    color: #EBEBEB;
+}

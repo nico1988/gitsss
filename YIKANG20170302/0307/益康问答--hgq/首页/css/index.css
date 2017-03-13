@@ -1,0 +1,149 @@
+body, html {
+    min-width: 300px;
+    max-width: 640px;
+    margin: 0 auto;
+    background-color: #ebebeb;
+    font-family: '宋体';
+}
+
+/*header Begin*/
+/*listenList-top Begin*/
+.top {
+    width: 100%;
+    height: 50px;
+    background: white;
+    position: relative;
+    box-sizing: border-box;
+    border-bottom: 1px solid #e1e1e1;
+}
+
+.top div {
+    overflow: hidden;
+    height: 50px;
+    width: 100%;
+    padding: 0 47px 0 10px;
+    /*padding-right: 37px;*/
+
+}
+
+.top div span {
+    float: left;
+    width: 33.3333%;
+    height: 50px;
+}
+
+.top div span.bor {
+    color:#44b181;
+    border-bottom: 4px solid #44b181;
+}
+
+.top div span:last-of-type b {
+    border-right: none;
+}
+.top div span b {
+    display: block;
+    height: 30px;
+    font: 14px '宋体';
+    line-height: 30px;
+    box-sizing: border-box;
+    border-right: 1px solid #e1e1e1;
+    margin-top: 10px;
+    text-align: center;
+}
+
+.top > a {
+    width: 37px;
+    height: 100%;
+    text-align: center;
+    line-height: 50px;
+    position: absolute;
+    top: 0;
+    right: 10px;
+}
+
+.top a img {
+    width: 16px;
+    height: 16px;
+}
+
+/*header End*/
+
+
+/*content Begin*/
+.content{
+    width: 100%;
+    height: 100%;
+    overflow: hidden;
+}
+.contentBox{
+    width: 100%;
+    /*height: 127px;*/
+    background-color: white;
+    margin-top: 10px;
+    padding: 10px 40px 10px 10px;
+    position: relative;
+}
+.contentBox p:nth-child(2){
+    margin: 10px 0;
+    color: #999;
+}
+.contentBox p:nth-child(2) b{
+    border-left: 1px solid black;
+    margin: 0 10px;
+}
+.contentBox a{
+    display: block;
+    width: 40px;
+    height: 40px;
+    border-radius: 50%;
+    background: url("../images/portrait_1.png") no-repeat;
+    background-size: cover;
+    margin-top: 5px;
+    float: left;
+}
+.contentBox .uppick{
+    width: 150px;
+    height: 30px;
+    background: url("../images/dialogBox_02.png") no-repeat;
+    background-size: contain;
+    margin-top: 20px;
+    margin-left: 50px;
+    position: relative;
+    overflow: hidden;
+}
+.contentBox .uppick i{
+    position: absolute;
+    left: 15px;
+    top: 7px;
+    width: 10px;
+    height: 14px;
+    background: url("../images/icon_index.png") no-repeat 0 0;
+    background-size: cover;
+}
+.contentBox .uppick span{
+    display: block;
+    margin-top: 6px;
+    margin-left: 35px;
+    color: white;
+}
+
+.contentBox .listenPerson {
+    position: absolute;
+    right: 20px;
+    bottom: 20px;
+    color: #b5b5b5;
+}
+
+.contentBox .listenPerson i{
+    float: left;
+    width: 15px;
+    height: 14px;
+    background: url("../images/icon_index.png") no-repeat -13px 3px;
+    background-size: cover;
+}
+.contentBox .listenPerson b{
+    padding-left: 5px;
+    font-weight: normal;
+
+}
+/*content End*/

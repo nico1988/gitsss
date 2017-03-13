@@ -1,0 +1,142 @@
+@charset "UTF-8";
+.Yk_layout{
+    position: static;
+}
+/*最新问题和收听列表标题*/
+.listen_title{
+    height: 44px;
+    border: 1px solid #E1E1E1;
+    font-size: 14px;
+    color: #35424B;
+    line-height: 44px;
+    position: relative;
+    background-color: #fff;
+}
+.listen_title>div{
+    height: 100%;
+}
+.listen_title a.now{
+    color: #44B181;
+    border-bottom: 2px solid #44B181;
+}
+.listen_title a{
+    width: 60px;
+    display: block;
+    height: 100%;
+    margin: 0 auto;
+    text-align: center;
+}
+.listen_title .new_question{
+    width: 45%;
+    position: relative;
+}
+.listen_title .listen_list{
+    width: 55%;
+    padding-right: 10%;
+    position: relative;
+}
+.listen_title .icon_search{
+    width: 36px;
+    height: 36px;
+    padding: 10px;
+    background: url("../images/sprit.fw.png") -67px -32px;
+    background-size:300px 300px;
+    background-origin: content-box;
+    background-clip: content-box;
+    position: absolute;
+    right: 10px;
+    top: 4px;
+}
+.listen_title span{
+    height: 16px;
+    width: 1px;
+    position: absolute;
+    background-color: #E1E1E1;
+    top:14px;
+}
+.new_question span{
+    right: -7px;
+}
+.listen_list span{
+    right: 45px;
+}
+/*最新问题主体内容*/
+.question_box{
+    height: 126px;
+    background-color: #fff;
+    padding: 10px;
+    margin-bottom: 10px;
+}
+.question_box p{
+    height: 28px;
+    line-height: 14px;
+    font-size: 14px;
+    color: #35424B;
+}
+.question_box .answer_name{
+    font-size: 11px;
+    color: #999;
+}
+.answer_con{
+    width: 100%;
+}
+.answer_con a{
+    display: block;
+    width: 15%;
+}
+.answer_con .free_listen{
+    width: 70%;
+}
+.answer_con .listen_num{
+    width: 15%;
+}
+.question_box .answer_con img{
+    width: 40px;
+    height: 40px;
+}
+.question_box .free_listen{
+    width: 145px;
+    height: 30px;
+    background-color: #44B181;
+    border-radius: 15px;
+    color: #fff;
+    font-size: 14px;
+    position: relative;
+    padding-left: 30px;
+    line-height: 30px;
+    margin-left: 15px;
+    margin-top: 10px;
+}
+.question_box .free_listen i{
+    width: 10px;
+    height: 14px;
+    position: absolute;
+    background: url("../images/sprit.fw.png") -13px -32px;
+    background-size: 300px 300px;
+    top:8px;
+    left: 13px;
+}
+.question_box .free_listen s{
+    width: 6px;
+    height: 10px;
+    position: absolute;
+    background: url("../images/sprit.fw.png") -96px -34px;
+    background-size: 300px 300px;
+    top:-3px;
+    left: 1px;
+}
+.question_box .listen_num{
+    font-size: 11px;
+    color: #999;
+    position: relative;
+    margin-top: 25px;
+}
+.question_box .listen_num i{
+    width: 12px;
+    height: 11px;
+    position: absolute;
+    background: url("../images/sprit.fw.png") -39px -34px;
+    background-size: 300px 300px;
+    left: -16px;
+    top:3px;
+}

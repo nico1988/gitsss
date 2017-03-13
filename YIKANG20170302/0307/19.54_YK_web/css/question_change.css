@@ -1,0 +1,111 @@
+.change{
+    width: 100%;
+    background: #ccc;
+}
+.change img{
+    width: 60px;
+    height: 60px;
+    margin-right: 8px;
+}
+.change .many{
+    font-size: 14px;
+    font-weight: bold;
+    margin-bottom: 18px;
+}
+.change .fiveTy{
+    color: #999999;
+    margin-left: 20px;
+    position: relative;
+}
+/*动态添加信息符号*/
+.change .fiveTy::before{
+    content: "";
+    display: block;
+    background: url("../images/sparate.png") no-repeat -31px -30px;
+    background-size: 84px 53px;
+    width: 14px;
+    height: 14px;
+    position: absolute;
+    left: -15px;
+    top: 2px;
+}
+.changeTop li{
+    padding: 0 20px;
+    width: 100%;
+    color: #999999;
+}
+.changeTop .one li:nth-of-type(1) a{
+    display: inline-block;
+    width: 80px;
+    text-align: center;
+    height: 44px;
+    line-height: 44px;
+    font-size: 14px;
+    margin: 0 auto;
+}
+.changeTop .one li:nth-of-type(1) b{
+    color: #CCC;
+}
+.changeTop .one li:nth-of-type(1){
+    text-align: center;
+    width: 100%;
+}
+.changeTop .one .greenCo{
+    position: relative;
+}
+/*动态添加放大镜*/
+.changeTop .one .greenCo::before{
+    content: "";
+    display: block;
+    width: 16px;
+    height: 16px;
+    background: url("../images/sparate.png") no-repeat -31px -4px;
+    background-size: 84px 53px;
+    position: absolute;
+    right: -115px;
+    top: 14px;
+}
+.changeTop .one li a.greenCo{
+    color: #43B181;
+    border-bottom: 2px solid #43B181;
+}
+.changeTop li:nth-of-type(2){
+    height: 32px;
+    line-height: 32px;
+}
+.changeTop li:nth-of-type(2) h3{
+    font-size: 14px;
+    font-weight: 500;
+}
+.changeTop li:nth-of-type(2) .blue{
+    color: #43B181;
+}
+.changeTop li:nth-of-type(3){
+    height: 70px;
+    padding-top: 10px;
+    margin-bottom: 10px;
+    border-top: 1px solid #e0e0e0;
+}
+.changeTop li:nth-of-type(4){
+    margin-top: 20px;
+    height: 50px;
+}
+.changeTop li:nth-of-type(4) p{
+    font-size: 14px;
+    color: #656565;
+    margin: 6px 0;
+}
+.changeBot li{
+    padding: 18px 20px;
+    border-bottom: 1px solid #ccc;
+}
+.blackLine{
+    width: 100%;
+    height: 15px;
+    background-color: #EBEBEB;
+}
+.line{
+    width: 100%;
+    height: 75px;
+    background-color:white ;
+}

@@ -1,0 +1,99 @@
+body,html{
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
+    background-color: #ebebeb;
+    position: relative;
+}
+
+/*ËÑË÷À¸ Begin*/
+.searchBox{
+    max-width: 640px;
+    min-width: 300px;
+    margin: 0 auto;
+    width: 100%;
+    background-color: white;
+    height: 44px;
+    position: relative;
+}
+.searchBox form {
+    width: 100%;
+    padding-left: 10px;
+    padding-right: 73px;
+}
+.searchBox form input{
+    width: 100%;
+    height: 34px;
+    border: 1px solid #dddddd;
+    box-sizing: border-box;
+    border-radius: 5px;
+    padding-left: 10px;
+    font-size: 14vm;
+    margin-top: 5px;
+}
+
+.searchBox a{
+    position: absolute;
+    height: 34px;
+    width: 56px;
+    border-radius: 5px;
+    background-color: #44b181;
+    top: 0;
+    right: 10px;
+    color: white;
+    line-height: 34px;
+    text-align: center;
+    font-family: "SimSun", "ËÎÌå";
+    font-size: 12vm;
+    margin-top: 5px;
+}
+.searchBox ul{
+    border: 1px solid #dddddd;
+    border-top: none;
+    padding-left: 10px;
+}
+.searchBox ul li{
+    margin: 5px 0;
+}
+.searchBox ul li:first-of-type{
+    margin-top: 0;
+}
+
+.now{
+    background-color: #ccc;
+}
+/*ËÑË÷À¸ End*/
+
+/*Î´ËÑË÷µ½ÄÚÈÝBegin*/
+.noContent{
+    position: absolute;
+    width: 128px;
+    height: 130px;
+    /*border: 1px solid #000;*/
+    margin-top: 40%;
+    /*margin-top: -114px;*/
+    text-align: center;
+    left: 50%;
+    margin-left: -65px;
+}
+.noContent img{
+    width: 114px;
+    height: 44px;
+    margin-bottom: 20px;
+}
+.noContent span{
+    font: 12px 'Î¢ÈíÑÅºÚ';
+}
+.noContent a{
+    display: block;
+    width: 100%;
+    height: 33px;
+    line-height: 33px;
+    background-color: #44b181;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    border-radius: 5px;
+    font-family: 'Î¢ÈíÑÅºÚ';
+}
+/*Î´ËÑË÷µ½ÄÚÈÝEnd*/

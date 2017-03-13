@@ -1,0 +1,47 @@
+/*ÂÖ²¥Í¼ Begin*/
+.wheelBox{
+    width: 100%;
+    overflow: hidden;
+    position: relative;
+}
+.wheelBox ul:nth-child(1){
+    width: 600%;
+}
+.wheelBox ul:nth-child(1) li{
+    width: 16.666%;
+    float: left;
+}
+.whwheelBoxeel ul:nth-child(1) li a{
+    display: block;
+    width: 100%;
+    margin: 0 auto;
+}
+.wheelBox ul:nth-child(1) li a img{
+    display: block;
+    width: 100%;
+}
+/*µãºÐ×Ó*/
+.wheelBox ul:nth-child(2){
+    position: absolute;
+    width: 39px;
+    /*height: 10px;*/
+    /*background-color: red;*/
+    bottom: 10px;
+    left: 50%;
+    margin-left: -20px;
+}
+.wheelBox ul:nth-child(2) li{
+    width: 6px;
+    height: 6px;
+    float: left;
+    border-radius: 3px;
+    border: 1px solid black;
+    margin-right: 5px;
+}
+.wheelBox ul:nth-child(2) li:last-child{
+    margin-right: 0;
+}
+.wheelBox ul:nth-child(2) li.now{
+    background-color: red;
+}
+/*ÂÖ²¥Í¼ End*/

@@ -1,0 +1,65 @@
+footer {
+    min-width: 300px;
+    max-width: 640px;
+    width: 100%;
+    height: 50px;
+    margin: 0 auto;
+    border: 1px solid #E1E1E1;
+}
+footer ul.bottom {
+    width: 100%;
+    height: 100%;
+    display: flex;
+    justify-content: space-around;
+}
+footer ul.bottom li {
+    display: flex;
+    justify-content: center;
+    margin: 0 5px;
+    height: 100%;
+    float: left;
+    width: 20%;
+    position: relative;
+}
+footer ul.bottom li a {
+    display: block;
+    width: 100%;
+    height: 100%;
+    /*background-origin: content-box;
+    background-clip: content-box;*/
+    text-align: center;
+
+}
+footer ul.bottom li  i {
+    position: absolute;
+    top: 4px;
+    display: block;
+    width: 30px;
+    height: 28px;
+    background-color: blue;
+    background: url("../images/bottom.png") no-repeat;
+    -webkit-background-size: 30px 98px;
+    background-size: 30px 98px;
+    background-origin: content-box;
+    background-clip: content-box;
+    text-align: center;
+}
+footer ul.bottom li:nth-child(1) i {
+    background-position: 0 -75px;
+}
+footer ul.bottom li:nth-child(2) i {
+    background-position: 0 -50px;
+}
+footer ul.bottom li:nth-child(3) i {
+    background-position: 0 -25px;
+}
+footer ul.bottom li:nth-child(4) i {
+    background-position: 0 0;
+}
+footer ul.bottom li span {
+    position: absolute;
+    width: 100%;
+    bottom: 0px;
+    text-align: center;
+}
+

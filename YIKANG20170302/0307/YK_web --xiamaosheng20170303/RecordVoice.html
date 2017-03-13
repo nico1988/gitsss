@@ -1,0 +1,187 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>易康问答</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/recordVoice.css"/>
+    <link rel="stylesheet" href="css/animate.min.css"/>
+</head>
+<body>
+<div class="Yk_layout">
+    <!--头部搜索-->
+    <header class="Yk_header">
+        <div class="Yk_header_box ">
+            <a href="#" class="return">返回</a>
+            <em class="question">易康问答</em>
+            <!--头部右侧的小点-->
+            <div class="point">
+                <b></b><b></b><b></b>
+            </div>
+        </div>
+    </header>
+    <!--头部搜索-->
+    <!--中部问答区块-->
+    <div class="ask-answer">
+        <div class="ask clearfix">
+            <div class="head clearfix">
+                <h2 class="logo">李响</h2>
+                <span class="rmb">&yen;20</span>
+            </div>
+            <h3 class="question clearfix">如何学习语文的文言文内容,快速提高语文成绩？</h3>
+            <span class="time-left">还有<i>5</i>小时就过期</span>
+            <a href="javascript:;" class="response" id="response">回答</a>
+            <a href="javascript:;" class="refuse" id="refuse">拒绝回答</a>
+            <br/>
+        </div>
+        <div class="answer" id="answer">
+            <div class="answer01">
+                <span>免费追问</span>
+                <p>不知道你讲什么</p>
+                <span>6分钟前</span>
+            </div>
+        </div>
+    </div>
+    <!--中部问答区块-->
+    <!--录音区块-->
+    <div class="record clearfix">
+        <div class="earn"><b style="font-size:20px">公开</b>&nbsp&nbsp&nbsp<span>提问公开回答，答案每被偷听1次，你就赚<i>￥0.5</i></span></p>
+            <div class="record-c" id="recordor">
+                <!--录音按键-->
+                <div class="record-circle" id="record-circle">
+                    <span class="colu" id="colu"></span>
+                    <span class="bowl"></span><!--录音中部-->
+                    <span class="foot"></span>
+                </div>
+                <!--重录按键-->
+                <div class="re-record"><a href="javascript:;">重录</a></div>
+            </div>
+            <p class="record-w">按住 1秒 后开始录制，最多可录制60"</p>
+            <form action="#">
+                <input type="submit" value="确定发送" class="send"/>
+            </form>
+        </div>
+        <!--录音区块-->
+    </div>
+    <!--弹出框-->
+    <div class="refuse_ans" id="refuse_ans">
+        <div class="refuse_con" id="refuse_con">
+            <h2>确定不回答这个问题？</h2>
+            <form action="#">
+                <textarea name="" id="reason" cols="30" rows="5" placeholder="填写拒绝理由，最多30字，非必填"></textarea>
+            </form>
+            <div class="confirm">
+                <a href="#" id="rethink">我再想想</a>
+                <a href="#" id="confirm">确定</a>
+            </div>
+        </div>
+    </div>
+    <!--弹出框-->
+</div>
+<script>
+    window.onload = function () {
+        refuse();
+        record();
+        confirm();/*点击确认*/
+    }
+    function refuse(){
+        /*拒绝回答*/
+        var refuse = document.getElementById("refuse");/*获取拒绝回答按钮*/
+        var refuseJumpOut = document.getElementById("refuse_ans");/*获取弹出框*/
+        var reThink = document.getElementById("rethink");/*获取弹出框*/
+        var refuseCon = document.getElementById("refuse_con");/*获取弹出框*/
+        refuse.onclick = function(){/*点击拒绝回答触发事件*/
+            refuseJumpOut.style.display = "block";/*显示遮罩*/
+            refuseCon.classList.remove("jumpOut");
+            refuseCon.classList.add("jumpDown");/*对话框添加动画*/
+//        refuseCon.classList.remove("jumpOut");/*对话移除动画*/
+        }
+        /*点击我再想想,执行动画隐藏*/
+        reThink.onclick = function(){/*点击拒绝回答触发事件*/
+            /*1、点击 再想想时先跳上去 */
+            /*1、同时移除跳出动画的class*/
+            /*3、提出之后执行隐藏背景*/
+            /*
+             * bug1 再次点击后不会有缓动隐藏效果
+             *
+             *      结果查明是由于每一次动画借宿都会触发弹出框的动画结束事件
+             *      加一个器解决问题^_^
+             * */
+            refuseCon.classList.add("jumpOut");
+            refuseCon.classList.remove("jumpDown");
+            setTimeout(function(){
+                refuseJumpOut.style.display = "none";
+            },800)
+            var reason = document.getElementById("reason");/*获取确认键*/
+            reason.value = "";/*最后一步清楚输入的原因*/
+        }
+    }
+    function record(){
+        /*录音部分*/
+        var timer = null;/*定时器*/
+        var timerColor = null;
+        var recorderCircle = document.querySelector("#record-circle");/*获取录音按键*/
+        var colu = document.querySelector("#colu");/*获取录音按键*/
+
+        /*触摸录音按钮事件*/
+        recorderCircle.addEventListener("touchstart",function(e){
+//            console.log("touchstart");
+            /*按下800毫秒后让话筒背景变红色*/
+            timerColor=setTimeout(function(){
+                recorderCircle.classList.toggle("red");
+                timer = setInterval(function(){/*每隔500毫秒让话筒交替变色*/
+                    console.log(111);
+                    colu.classList.toggle("silver");
+                },500)
+            },1000)
+        });
+        recorderCircle.addEventListener("touchmove",function(e){
+
+        });
+        recorderCircle.addEventListener("touchend",function(e){
+            console.log("touchend");
+            recorderCircle.classList.toggle("red");
+            colu.classList.remove("silver");
+            clearInterval(timer);/*内层定时器*/
+            clearInterval(timerColor);/*清除话筒变色*/
+        });
+    }
+    /*-----------点击确认动态增加回答-----------*/
+    function confirm(){
+        var confirm = document.getElementById("confirm");/*获取确认键*/
+        var answer = document.getElementById("answer");/*获取问答父元素*/
+        var reason = document.getElementById("reason");/*获取确认键*/
+        var areYouSure = document.createElement("p");
+
+        confirm.addEventListener ("click",function(){/*确认点击事件*/
+            if(reason.value){
+                var answerCon = document.createElement("div");
+                var span1 = document.createElement("span");
+                span1.innerHTML = "免费追问";
+                answerCon.appendChild(span1);
+                var p = document.createElement("p");
+                p.innerHTML = reason.value;/*为动态的元素创建内容*/
+                answerCon.appendChild(p);
+//                var time = new getTime();
+                var span2 = document.createElement("span");
+                span2.innerHTML = Date();
+                answerCon.appendChild(span2);
+                answerCon.className = "answer-content";
+                answer.appendChild(answerCon);
+                var refuseJumpOut = document.getElementById("refuse_ans");/*获取弹出框*/
+                refuseJumpOut.style.display = "none";/*确定后隐藏遮罩*/
+                reason.value = "";/*最后一步清楚输入的原因*/
+            }else{
+                alert("请输入拒绝理由");
+                p.innerHTML = "不应该说写点什么嘛"
+                reason.appendChild(p);
+            }
+        })
+    }
+
+    /*-----------点击确认动态增加回答-----------*/
+
+</script>
+</body>
+</html>

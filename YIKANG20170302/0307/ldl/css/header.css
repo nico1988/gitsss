@@ -1,0 +1,79 @@
+body{
+    background: #f5f5f5;
+}
+/*��������� ��������ҳ��*/
+.Yk_layout{
+    min-width: 300px;/*����С��Ļ�豸  Ϊ�˱��ֲ��ֵ�����  ���ñ�320px��С����Ļ��ʱ��������*/
+    max-width: 640px;/*����ҵ����  ���ͼһ����640px �����������ôͼƬ�ͻᱻ����  ҳ�����ʾЧ���Ͳ�*/
+    margin: 0 auto;
+    height: 100%;
+    position:relative;
+}
+/*ͷ����������*/
+.Yk_header{
+    /*��λ�Ժ������׼�� �������� ��� ��С���û��*/
+    width: 100%;
+    height: 44px;
+    z-index: 1;/*��߲㼶 ��ֹ����*/
+}
+/*header�����滻.jd_header ʵ�������޶�*/
+.Yk_header .Yk_header_box{
+    min-width: 300px;
+    max-width: 640px;
+    margin: 0 auto;
+    position: fixed;
+    width: 100%;
+    height: 44px;
+    line-height: 44px;
+    background-color:#43B181;
+}
+/*header��෵��*/
+.Yk_header .Yk_header_box .return{
+    width: 60px;
+    position: absolute;
+    top: 0;
+    left: 6px;
+    color: white;
+    font-size: 12px;
+    text-align: right;
+}
+/*αԪ�ض�̬���returnǰ��С��ͷ*/
+.Yk_header .Yk_header_box .return::before{
+    content: " < ";
+    display: block;
+    width: 30px;
+    height: 40px;
+    position: absolute;
+    top: -2px;
+    left: 4px;
+    font-size: 30px;
+    color: white;
+}
+/*header�м��׿��ʴ�*/
+.Yk_header .Yk_header_box .question{
+    display: inline-block;
+    width: 100%;
+    padding-left: 95px;
+    padding-right: 76px;
+    text-align: center;
+    color: white;
+    font-size: 16px;
+}
+/*�Ҳ�СԲ��ĸ�����*/
+.Yk_header .Yk_header_box .point{
+    position: absolute;
+   /* right: 18px;*/
+    right: 10px;
+    top: 16px;
+    height: 44px;
+    overflow: hidden;
+}
+/*�Ҳ�СԲ��*/
+.Yk_header .Yk_header_box .point b{
+    width: 14px;
+    height: 14px;
+    float: left;
+    border-radius: 50%;
+    margin-left: 5px;
+    background-color: white;
+}

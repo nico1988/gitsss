@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html>
+<head lang="en">
+    <meta charset="UTF-8">
+    <!--适配手机终端-->
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+    <title></title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/question.css"/>
+</head>
+<body>
+<div class="Yk_layout">
+    <!--头部搜索-->
+    <header class="Yk_header">
+        <div class="Yk_header_box ">
+            <a href="#" class="return">返回</a>
+            <em class="question tc">易康问答</em>
+            <!--头部右侧的小点-->
+            <div class="point">
+                <b></b><b></b><b></b>
+            </div>
+        </div>
+    </header>
+    <!--contain began-->
+    <div class="ques">
+        <div class="ques_top">
+            <!--圆圈-->
+            <div class="radiu"></div>
+            <p class="Mic">Michelle</p>
+            <span>英语教师</span>
+            <span>0人收听</span>
+            <p>"解答相关英语学习问题及语言类学习问题"</p>
+        </div>
+        <div class="ques_containt">
+            <div class="contain_top clearfix">
+                <span class="f_left">超过48小时未回答，将全额退款</span>
+                <span class="f_right Money">￥20</span>
+            </div>
+            <!--文本域-->
+            <textarea id="status" name="status" rows="6" cols="97" onkeydown='countChar("status","counter");'
+                      onkeyup='countChar("status","counter");'>那你很棒棒的哦</textarea>
+
+            <span id="counter" class="f_right" >60</span>
+
+            <div class="contain_bottom">
+                <p>答案被公开，答案每被偷偷听一次，你从中分成0.5</p>
+                <div class="grrenRa">
+                    <b>提问</b>
+                </div>
+            </div>
+        </div>
+        <div class="ques_footer">
+            <div class="ques_to">
+                <span class="f_left">回答了1个问题,总收入为0元</span>
+                <span class="f_right">￥20 <b>|</b> <b>默认</b></span>
+            </div>
+            <div class="ques_bo clearfix">
+                <div class="leftRadiu"></div>
+                <div class="bo_right">
+                    <p>如何学习语文的文言文内容，快速提高语文</p>
+                    <p>成绩？</p>
+                    <span>王知易</span> <b>|</b> <span>英语文学语言老师</span>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部填充颜色-->
+    <div class="line"></div>
+    <!--尾部开始-->
+    <footer>
+        <ul class="bottom">
+            <li class="textColor"><a href="#"></a><i></i><span>榜单</span></li>
+            <li><a href="#"></a><i></i><span>收听</span></li>
+            <li><a href="#"></a><i></i><span>发现</span></li>
+            <li><a href="#"></a><i></i><span>我的</span></li>
+        </ul>
+    </footer>
+    <script src="js/question.js"></script>
+    <script src="js/bottom.js"></script>
+</div>
+</body>
+</html>

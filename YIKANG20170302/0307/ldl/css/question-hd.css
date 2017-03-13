@@ -1,0 +1,58 @@
+/*提问nav*/
+.question_hd .hd_tit{
+    width: 100%;
+    border-bottom: 1px solid #CCCCCC;
+    padding: 0 10px;
+
+}
+.question_hd .hd_tit a{
+    display: block;
+    text-align: center;
+    width: 50%;
+    line-height: 43px;
+    font-size: 14px;
+
+}
+/*伪元素添加中间竖线*/
+.question_hd .hd_tit a:first-child{
+    position: relative;
+ }
+.question_hd .hd_tit a:first-child::before{
+    content: "";
+    width: 1px;
+    height: 15px;
+    background: #CCCCCC;
+    position: absolute;
+    top: 14px;;
+    right: 0;
+}
+.question_hd .hd_tit a.now{
+    border-bottom: 1px solid #44b181;
+    color:#44b181;
+}
+/*回答问题*/
+.r_question{
+    width: 100%;
+    padding: 0 10px ;
+    margin-top: 10px;
+
+}
+.r_question a{
+    display: block;
+    width: 50px;
+    height: 50px;
+    border-radius:25px ;
+    background:#44b181 ;
+}
+.r_world{
+    padding-left: 70px;
+}
+.r_world p {
+    line-height: 50px;
+
+}
+.question_hd h3{
+    padding: 0 10px;
+    font-size: 15px;
+}
+

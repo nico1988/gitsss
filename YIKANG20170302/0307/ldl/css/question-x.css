@@ -1,0 +1,203 @@
+body, html {
+    min-width: 300px;
+    max-width: 640px;
+}
+
+.details {
+    height: 100%;
+    width: 100%;
+    padding: 0 9px;
+}
+
+/*提问部分*/
+.details .ask {
+    height: 45px;
+    width: 100%;
+    text-align: center;
+    line-height: 45px;;
+    padding-left: 36px;
+    position: relative;
+}
+
+.details .ask a {
+    position: absolute;
+    top: 7px;
+    left: 0;
+    background: url("../images/headp.png");
+    background-size: 50px 44px;
+    width: 27px;
+    height: 27px;
+    border-radius: 13.5px;
+}
+
+.details .ask .red {
+    display: block;
+    color: red;
+}
+
+.details h3 {
+    font-size: 15px;
+
+}
+
+/*公共回答*/
+.answer {
+    /*height: 50px;*/
+    width: 100%;
+    position: relative;
+
+}
+
+/*回答顶部*/
+.top {
+    width: 100%;
+    height: 50px;
+}
+
+.answer .top_f_left .headp {
+    background: url("../images/headp.png");
+    background-size: 70px 70px;
+    position: absolute;
+    top: 5px;;
+    left: 0;
+    height: 35px;
+    width: 35px;
+    /*background: red;*/
+    border-radius: 18px;
+}
+
+.answer .top_f_left .message {
+    background: url("../images/message.png");
+    background-size: 150px 60px;
+    background-position: -6px 0px;
+    position: absolute;
+    top: 8px;;
+    left: 50px;
+    width: 145px;
+    height: 30px;
+}
+
+.answer .top_f_left .message i {
+    position: absolute;
+    top: 6px;
+    left: 13px;
+    width: 13px;
+    height: 15px;
+    background: url("../images/message.png");
+    background-size: 150px 60px;
+    background-position: -16px -35px;
+
+}
+
+.answer .top_f_left .message span {
+    position: absolute;
+    top: 4px;
+    right: -28px;
+    color: #999999;
+}
+
+.answer .top_f_right a {
+    margin-top: 8px;
+    width: 33px;
+    height: 33px;
+    /*background: #000;*/
+    display: block;
+    border-radius: 20px;
+    border: 1px solid #7ec5a6;
+    text-align: center;
+    line-height: 32px;
+    color: #7ec5a6;
+
+}
+
+/*回答底部*/
+.answer .bottom {
+    color: #999999;
+    height: 24px;
+    width: 100%;
+    margin-top: 5px;
+    padding-left: 19px;
+    position: relative;
+}
+
+.answer .bottom .bottom_f_left {
+    width: 14px;
+    height: 14px;
+    display: block;
+    /*background: #000;*/
+    position: absolute;
+    top: 4px;
+    left: 0px;
+    background: url("../images/message.png");
+    background-size: 150px 60px;
+    background-position: -83px -40px;
+}
+
+.answer .bottom .bottom_f_right span {
+    padding-left: 20px;
+    position: relative;
+
+}
+
+.answer .bottom .bottom_f_right span:first-child::before {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: url("../images/message.png");
+    background-size: 150px 60px;
+    background-position: -42px -38px;
+}
+
+.answer .bottom .bottom_f_right span:last-child::before {
+    position: absolute;
+    top: 2px;
+    left: 2px;
+    content: "";
+    display: block;
+    width: 14px;
+    height: 14px;
+    background: url("../images/message.png");
+    background-size: 150px 60px;
+    background-position: -65px -38px;
+}
+
+/*追问*/
+.agin {
+    background: white;
+    padding: 0px 10px;
+}
+
+.agin p {
+    color: #CCCCCC;
+    font-size: 12px;
+    line-height: 20px;
+}
+.agin h3{
+    font-size: 14px;
+}
+
+/*收听*/
+.listen {
+    padding: 0px 10px;
+    line-height: 25px;
+    color: #CCCCCC;
+
+}
+
+.listen .tit p {
+    line-height: 25px;
+}
+
+.listen .tit .f_right {
+    font-size: 25px;
+}
+
+.listen .tit .black {
+    color: black;
+}
+
+/*空白*/

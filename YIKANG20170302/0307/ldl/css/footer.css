@@ -1,0 +1,62 @@
+/*公共底部*/
+footer {
+    height: 50px;
+    background: #ebebeb;
+    width: 100%;
+    position: fixed;
+    bottom: 0;
+}
+
+footer ul {
+    height: 100%;
+    width: 100%;
+}
+
+footer ul li {
+    width: 25%;
+    height: 50px;
+    text-align: center;
+    float: left;
+    position: relative;
+    color: #c2c3c4;
+
+}
+
+footer ul li a {
+    width: 100%;
+    height: 60%;
+    display: block;
+}
+footer ul li a span{
+    display: block;
+    width: 20px;
+    height: 18px;
+    background: url("../images/footer.png") no-repeat;
+    background-size: 76px 18px;
+    position: absolute;
+    left: 50%;
+    margin-left: -10px;
+    top: 10px;
+    /*background-color: red;*/
+    /*padding: 5px 5px;*/
+    background-origin: content-box;
+    background-clip: content-box;
+
+}
+
+footer ul li:nth-child(1) a span{
+    background-position: 4px 0;
+    /*background-size: 100% 100% ;*/
+}
+
+footer ul li:nth-child(2) a span{
+    background-position: -15px 0;
+}
+
+footer ul li:nth-child(3) a span{
+    background-position: -33px 0;
+}
+
+footer ul li:nth-child(4) a span{
+    background-position: -51px 0;
+}

@@ -1,0 +1,84 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>record-success</title>
+    <meta name="viewport" content="width=device-width, user-scalable=no, initial-scale=1.0"/>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/record-success.css"/>
+    <link rel="stylesheet" href="css/animate.min.css"/>
+</head>
+<body>
+<div class="Yk_layout">
+    <!----------头部搜索---------->
+    <header class="Yk_header">
+        <div class="Yk_header_box ">
+            <a href="#" class="return">返回</a>
+            <em class="question">易康问答</em>
+            <!----------头部右侧的小点---------->
+            <div class="point">
+                <b></b><b></b><b></b>
+            </div>
+        </div>
+    </header>
+    <!----------头部搜索---------->
+    <!----------中部问答区块---------->
+    <div class="ask-answer">
+        <div class="ask clearfix">
+            <div class="head clearfix">
+                <h2 class="logo">李响</h2>
+                <span class="rmb">&yen;20</span>
+            </div>
+            <h3 class="question clearfix">如何学习语文的文言文内容,快速提高语文成绩？</h3>
+            <span class="time-left">还有<i>5</i>小时就过期</span>
+            <a href="javascript:;" class="response" id="response">回答</a>
+            <a href="javascript:;" class="refuse" id="refuse">拒绝回答</a>
+            <br/>
+        </div>
+    </div>
+    <div class="send">
+        <p><i style="font-size:18px">公开</i> 提问公开回答，答案每被偷听1次，你就赚￥0.5</p>
+        <div class="clearfix send-con">
+            <span style="color:red" class="fifty">50"</span>
+            <div class="out">
+                <div class="inside"></div>
+                <span></span>
+            </div>
+            <a href="JavaScript:;" class="rerecord">重录</a>
+        </div>
+
+        <form action="#">
+            <input type="submit" value="确定发送" class="send" id="sure_send"/>
+        </form>
+    </div>
+</div>
+<!----------拒绝回答问题弹出框---------->
+<div class="refuse_ans" id="refuse_ans">
+    <div class="refuse_con" id="refuse_con">
+        <h2>确定不回答这个问题？</h2>
+        <form action="#">
+            <textarea name="" id="reason" cols="30" rows="5" placeholder="填写拒绝理由，最多30字，非必填"></textarea>
+        </form>
+        <div class="confirm">
+            <a href="#" id="rethink">我再想想</a>
+            <a href="#" id="confirm">确定</a>
+        </div>
+    </div>
+</div>
+<!----------拒绝回答问题弹出框---------->
+<!----------温馨提示弹出框---------->
+<div class="prompt" id="prompt">
+    <div class="prompt_con" id="prompt_con">
+        <h2>易康分答温馨提示？</h2>
+        <p>为防手滑误点,请确认录音满意后再发送</p>
+        <div class="confirm">
+            <a href="#" id="re_think">我再想想</a>
+            <a href="#" id="con_firm">确定</a>
+        </div>
+    </div>
+</div>
+<!----------温馨提示弹出框---------->
+<script src="js/record_success.js">
+</script>
+</body>
+</html>
